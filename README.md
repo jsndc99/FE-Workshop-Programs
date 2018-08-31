@@ -5,5 +5,5 @@ List:
 1)  Blink LED
 2)  Proximity LED
 3)  Phone to LED (Bluetooth)
-4)  Bidirectional Communication (Combination of both above)
+4)  Bidirectional Communication
 5)  Arduino to Phone (Button Press or serial monitor for input)

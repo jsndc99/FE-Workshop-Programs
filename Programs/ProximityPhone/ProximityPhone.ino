@@ -7,6 +7,7 @@ int proxpin=8;
 
 //to store state of sensor, we assume no motion detected
 int presence=LOW;
+//int presence=HIGH;
 
 //to read state of sensor
 int val;
@@ -57,5 +58,25 @@ void loop()
       presence=LOW;
     }
   }
+
+  /*if(val==LOW)
+  {
+    if(presence==HIGH)
+    {
+      Serial.write("Presence detected");
+      presence=LOW;
+    }
+  }
+    
+  //if presence is not detected
+  else
+  {
+    //if there was presence before
+    if(presence==LOW)
+    {
+      Serial.write("No Presence detected");
+      presence=HIGH;
+    }
+  }*/
 }
 

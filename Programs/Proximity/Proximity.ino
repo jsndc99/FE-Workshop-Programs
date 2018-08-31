@@ -1,7 +1,7 @@
 /*
   Proximity
   Turns on and off the internal LEDconnected to digital pin 13,
-  when pressing a pushbutton attached to pin 2
+  when any object is detected by the proximity sensor
 
   LED_BUILTIN denotes the internal LED of any Arduino
 */
@@ -9,26 +9,27 @@
 // the number of the proximity sensor pin
 int proxPin = 2;     
 
-// variable for reading the pushbutton status
-int proxState = LOW;         
+// variable for reading the proximity sensor status
+int proxState = LOW;
+//int proxState = HIGH;
 
 //Mandatory function required in all 'sketches', runs only once after Arduino is switched ON
 void setup()    
 {
-  //Sets built-in LED as output pin
+  //Sets built-in LED as output
   pinMode(LED_BUILTIN, OUTPUT);  
   
-  //Sets button as input pin
+  //Sets sensor as input
   pinMode(proxPin, INPUT);  
 }
 
 //Mandatory function required in all 'sketches', runs forever till Arduino is switched OFF
 void loop() 
 {
-  // read the state of the pushbutton value:
+  // read the state of the sensor value:
   proxState = digitalRead(proxPin); 
 
-  // check if the buttonstate is ON or OFF
+  // check if the state of sensor is ON or OFF
   if (proxState == HIGH)   
     //If value is 1 then LED turns ON
     digitalWrite(LED_BUILTIN, HIGH); 
@@ -37,11 +38,7 @@ void loop()
     digitalWrite(LED_BUILTIN, LOW);
 
    /*if (proxState == LOW)   
-    //If value is 0 then LED turns ON
     digitalWrite(LED_BUILTIN, HIGH); 
   else 
-    //If value is 0 then LED turns OFF
-    digitalWrite(LED_BUILTIN, LOW);*/
+    igitalWrite(LED_BUILTIN, LOW);*/
 }
-
-

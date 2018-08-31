@@ -10,7 +10,7 @@
 int proxPin = 2;     
 
 // variable for reading the pushbutton status
-int proxState = 0;         
+int proxState = LOW;         
 
 //Mandatory function required in all 'sketches', runs only once after Arduino is switched ON
 void setup()    

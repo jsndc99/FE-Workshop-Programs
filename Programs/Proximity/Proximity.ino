@@ -34,7 +34,14 @@ void loop()
     digitalWrite(LED_BUILTIN, HIGH); 
   else 
     //If value is 0 then LED turns OFF
-    digitalWrite(LED_BUILTIN, LOW);  
+    digitalWrite(LED_BUILTIN, LOW);
+
+   /*if (proxState == LOW)   
+    //If value is 0 then LED turns ON
+    digitalWrite(LED_BUILTIN, HIGH); 
+  else 
+    //If value is 0 then LED turns OFF
+    digitalWrite(LED_BUILTIN, LOW);*/
 }
 
 

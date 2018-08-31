@@ -5,7 +5,7 @@
 //declare the input pin for Proximity sensor
 int proxpin=8;
 
-//to store state of sensor, we assume no motion detected
+//to store state of sensor, we assume no object detected
 int presence=LOW;
 //int presence=HIGH;
 
@@ -79,4 +79,3 @@ void loop()
     }
   }*/
 }
-

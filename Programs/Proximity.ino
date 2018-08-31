@@ -7,11 +7,10 @@
 */
 
 // the number of the proximity sensor pin
-int buttonPin = 2;     
+int proxPin = 2;     
 
 // variable for reading the pushbutton status
-
-int buttonState = 0;         
+int proxState = 0;         
 
 //Mandatory function required in all 'sketches', runs only once after Arduino is switched ON
 void setup()    
@@ -20,22 +19,22 @@ void setup()
   pinMode(LED_BUILTIN, OUTPUT);  
   
   //Sets button as input pin
-  pinMode(buttonPin, INPUT);  
+  pinMode(proxPin, INPUT);  
 }
 
 //Mandatory function required in all 'sketches', runs forever till Arduino is switched OFF
 void loop() 
 {
   // read the state of the pushbutton value:
-  buttonState = digitalRead(buttonPin); 
+  proxState = digitalRead(proxPin); 
 
   // check if the buttonstate is ON or OFF
-  if (buttonState == HIGH)   
+  if (proxState == HIGH)   
     //If value is 1 then LED turns ON
-    digitalWrite(ledPin, HIGH); 
+    digitalWrite(LED_BUILTIN, HIGH); 
   else 
     //If value is 0 then LED turns OFF
-    digitalWrite(ledPin, LOW);  
+    digitalWrite(LED_BUILTIN, LOW);  
 }
 
 

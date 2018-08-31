@@ -5,15 +5,25 @@
   LED_BUILTIN denotes the internal LED of any Arduino
 */
 
-void setup()  //Mandatory function required in all 'sketches', runs only once after Arduino is switched ON 
+//Mandatory function required in all 'sketches', runs only once after Arduino is switched ON 
+void setup() 
 {
-  pinMode(LED_BUILTIN, OUTPUT); //Sets built-in LED as output pin
+  //Sets built-in LED as output pin
+  pinMode(LED_BUILTIN, OUTPUT); 
 }
 
-void loop() //Mandatory function required in all 'sketches', runs forever till Arduino is switched OFF
+//Mandatory function required in all 'sketches', runs forever till Arduino is switched OFF
+void loop() 
 {
-  digitalWrite(LED_BUILTIN, HIGH);  // turn the LED on (HIGH is the voltage level)
-  delay(1000);  // wait for a second
-  digitalWrite(LED_BUILTIN, LOW); // turn the LED off by making the voltage LOW
-  delay(1000);  // wait for a second
+  // turn the LED on (HIGH is the voltage level)
+  digitalWrite(LED_BUILTIN, HIGH);  
+  
+  // wait for a second
+  delay(1000);  
+  
+  // turn the LED off by making the voltage LOW
+  digitalWrite(LED_BUILTIN, LOW);
+  
+  // wait for a second
+  delay(1000);  
 }

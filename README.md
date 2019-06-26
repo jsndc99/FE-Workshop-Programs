@@ -7,3 +7,6 @@ List:
 3)  Phone to LED (Bluetooth)
 4)  Bidirectional Communication
 5)  Arduino to Phone (Button Press or serial monitor for input)
+
+
+# This repository is archived and is no longer being maintained.
